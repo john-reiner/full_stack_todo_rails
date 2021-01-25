@@ -9,3 +9,7 @@
 10.times do |task|
     Task.create!(name: "Task #{task}", complete: false)
 end
+
+40.times do |subtask|
+    SubTask.create!(name: "Subtask #{subtask}", completed: false, task_id: rand(1..10))
+end
